@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 4%;
+  align-items: center;
+  border: var(--border-style);
+}
+.logo {
+  border: var(--border-style);
+  width: max(10%, 80px);
+}
+.profile {
+  width: 40px;
+  border: var(--border-style);
+}

@@ -1,13 +1,17 @@
+import React from "react";
 import "./App.css";
-
-function App() {
+import Navbar from "./components/Navbar/Navbar";
+import Sidebar from "./components/sidebar/Sidebar";
+const App = () => {
   return (
     <div>
-      <h1 className="hh">m5ithu</h1>
+      <Navbar></Navbar>
       <hr />
-      <a href="/">home</a>
+      <div className="app-content">
+        <Sidebar></Sidebar>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

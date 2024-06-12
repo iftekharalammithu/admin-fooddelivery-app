@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Outline";
+  --border-style: 1px solid red;
 }
 
 body {
