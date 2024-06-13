@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./List.css";
 import axios from "axios";
 import { toast } from "react-toastify";
-const List = () => {
+
+const List = ({ url }) => {
   const [list, setlist] = useState();
-  const url = "http://localhost:4000";
 
   const fatchlist = async () => {
     try {
-      const response = await axios.get(`${url}/api/food/list`);
-      // console.log(response);
+      const response = await axios.get(`${url}api/food/list`);
+      // console.log(url);
       if (response.data.success) {
         setlist(response.data.data);
       } else {
@@ -21,7 +21,7 @@ const List = () => {
   };
 
   const removeitem = async (foodid) => {
-    const response = await axios.delete(`${url}/api/food/remove`, {
+    const response = await axios.delete(`${url}api/food/remove`, {
       data: { id: foodid },
     });
     await fatchlist();
@@ -51,7 +51,7 @@ const List = () => {
           list.map((item, index) => {
             return (
               <div className="list-table-format" key={index}>
-                <img src={`${url}/image/${item.image} `} alt="" />
+                <img src={`${url}image/${item.image} `} alt="" />
                 <p>{item.name}</p>
                 <p>{item.category}</p>
                 <p>${item.price}</p>

@@ -3,8 +3,8 @@ import "./Add.css";
 import { assets } from "../../admin_assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
-const url = "http://localhost:4000/";
-const Add = () => {
+
+const Add = ({ url }) => {
   const [image, setimage] = useState(false);
   const [data, setdata] = useState({
     name: "",
