@@ -1,5 +1,7 @@
 # Food Delivery App Admin Dashboard and Controller
 
+![Admin Deshboard](./src/admin_assets/admindesh.png)
+
 ## Overview
 
 This is a ReactJS project that provides an admin dashboard and controller for a food delivery app. The dashboard allows administrators to manage orders, restaurant's Menu.
