@@ -16,7 +16,7 @@ This is a ReactJS project that provides an admin dashboard and controller for a 
 
 ### Installation
 
-1. Clone the repository: `https://github.com/iftekharalammithu/admin-fooddelivery-app.git`
+1. Clone the repository: `git clone https://github.com/iftekharalammithu/admin-fooddelivery-app.git`
 2. Install dependencies: `npm install`
 3. Start the development server: `npm start`
 
